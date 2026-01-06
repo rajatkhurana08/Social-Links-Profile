@@ -1,0 +1,100 @@
+:root {
+    --background-color: hsl(0, 0%, 8%);
+    --primary-text-color: hsl(75, 94%, 57%);
+    --secondary-text-color: hsl(0, 0%, 100%);
+    --tab-color: hsl(0, 0%, 20%);
+    --box-color: hsl(0, 0%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.8rem 3rem;
+    font-family: "Inter", sans-serif;
+}
+
+#user-details {
+    /* width: 18rem;
+    height: 27rem;
+    height: 500px;
+    margin: 15px; */
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    padding: 22px;
+    border-radius: 0.3rem;
+    background-color: var(--box-color);
+}
+
+#user-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+#user-image img {
+    padding: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+}
+
+#user-name {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+#user-location {
+    font-size: 1em;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+}
+
+#user-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+#social-media-link a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    background-color: var(--tab-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border-radius: 0.7rem;
+}
+
+.attribution {
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 12px;
+    bottom: 0;
+    margin: 2.5rem;
+}
+
+.attribution a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
